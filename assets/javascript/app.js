@@ -8,7 +8,7 @@ class _app {
   backgroundToggler = false;
   shouldIgnoreVideo = false;
   effects = ['C++', 'Py', 'C#', 'Node.JS', 'React', '', 'tada', 'wobble', 'jello'];
-  brandDescription = ['trans furry dev', 'cpp and py nerd', 'vrc addict'];
+  brandDescription = ['', 'trans furry dev', 'cpp and py nerd', 'vrc addict', 'ai lover', 'autistic af nerd'];
 
   titleChanger = (text, delay) => {
     if (!text) return;
