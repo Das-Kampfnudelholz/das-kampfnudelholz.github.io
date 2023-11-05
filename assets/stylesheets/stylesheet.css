@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&display=swap');
 html {
   cursor: url('../others/cursor.png'), default;
   -webkit-touch-callout: none;
@@ -19,15 +20,12 @@ input {
   background-color: #000;
 }
 
-@font-face {
-  font-family: courier_regular;
-  src: url('../others/Consolas.ttf');
-}
+
 
 * {
   padding: 0;
   margin: 0;
-  font-family: consolas, sans-serif;
+  font-family: "Baloo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 img{
@@ -138,7 +136,34 @@ input {
   width: 100%;
   height: 100%;
 }
-
+.circle-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #2F4858;
+  height: 45px;
+  width: 45px;
+  line-height: 1;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.circle-link:hover {
+  background: #4c857f;
+}
+.bt{
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.bt:hover{
+  background: #4c857f;
+}
+.circle-link svg {
+  fill: #fff;
+  margin-left: 8px;
+  margin-top: 4px;
+}
 #background {
   z-index: -2;
   position: fixed;
@@ -172,4 +197,22 @@ input {
 
 ::-webkit-scrollbar {
   width: 0;
+}
+
+#sidebar {
+  width: 350px; /* Adjust the width as needed */
+  background: #1c2c36ec;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto; /* Enable scrolling if content exceeds the height */
+}
+
+#content {
+  flex: 1;
+  padding: 20px; /* Add padding to the content area */
+}
+
+:root
+{
+  font-family: "Baloo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
