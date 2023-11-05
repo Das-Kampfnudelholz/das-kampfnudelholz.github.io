@@ -195,7 +195,7 @@ const skipIntro = () => {
     $('#main').remove();
 
     $('#marquee').marquee({
-      duration: 15000,
+      duration: 0,
       gap: 420,
       delayBeforeStart: 1000,
       direction: 'left',
