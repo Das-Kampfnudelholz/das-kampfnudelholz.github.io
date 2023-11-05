@@ -209,7 +209,7 @@ const skipIntro = () => {
     setTimeout(() => {
       const typed = new Typed('#brand', {
         strings: app.brandDescription,
-        typeSpeed: 40,
+        typeSpeed: 20,
 
         onComplete: () => {
           clearCursor();
