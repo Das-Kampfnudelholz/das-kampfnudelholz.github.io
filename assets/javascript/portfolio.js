@@ -194,7 +194,11 @@ function startTyping() {
     },
   });
 }
-startTyping();
+
+// Call the function when the document is ready
+document.addEventListener("DOMContentLoaded", function () {
+  startTyping();
+});
 
     setTimeout(() => {
       if (!app.shouldIgnoreVideo) {
