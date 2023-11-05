@@ -8,7 +8,7 @@ class _app {
   backgroundToggler = false;
   shouldIgnoreVideo = false;
   effects = ['C++', 'Py', 'C#', 'Node.JS', 'React', '', 'tada', 'wobble', 'jello'];
-  brandDescription = ['11 years old kids team', 'pro roblox players', 'xane ddosers', 'trashtalkers', 'esoterik fanboys', 'hack vs hack team'];
+  brandDescription = ['trans furry dev', 'cpp and py nerd', 'vrc addict'];
 
   titleChanger = (text, delay) => {
     if (!text) return;
