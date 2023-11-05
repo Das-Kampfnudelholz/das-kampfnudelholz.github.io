@@ -196,9 +196,9 @@ function startTyping() {
 }
 
 // Call the function when the document is ready
-document.addEventListener("DOMContentLoaded", function () {
-  startTyping();
-});
+
+startTyping();
+
 
     setTimeout(() => {
       if (!app.shouldIgnoreVideo) {
