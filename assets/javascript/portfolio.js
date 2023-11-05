@@ -28,9 +28,9 @@ GitHub: https://github.com/Lumm1t/obnoxious.club
 */
 
 'use strict';
-
+let currentStringIndex = 0;
 const ipgeolocation = 'https://api.ipgeolocation.io/ipgeo?apiKey=1785ed53312f42c7b5ef89f65c3faa1a';
-
+const strings = app.brandDescription;
 const timeouts = [];
 
 const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -206,16 +206,24 @@ const skipIntro = () => {
       $('.brand-header').animateCss(app.effects[Math.floor(Math.random() * app.effects.length)]);
     }, 200);
 
-    setTimeout(() => {
-      const typed = new Typed('#brand', {
-        strings: app.brandDescription,
-        typeSpeed: 100,
+function startTyping() {
+  if (currentStringIndex >= strings.length) {
+    // All strings have been cycled through, reset to the first string
+    currentStringIndex = 0;
+  }
 
-        onComplete: () => {
-          clearCursor();
-        },
-      });
-    }, 1350);
+  const typed = new Typed('#brand', {
+    strings: app.brandDescription,
+    typeSpeed: 100,
+
+    onComplete: () => {
+      clearCursor();
+      currentStringIndex++; // Move to the next string
+      setTimeout(startTyping, 1000); // Delay before typing the next string
+    },
+  });
+}
+startTyping();
 
     setTimeout(() => {
       if (!app.shouldIgnoreVideo) {
