@@ -38,31 +38,27 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 $(document).ready(() => {
   const links = [
     {
-      name: 'Lummit',
-      link: '76561197960276740',
+      name: 'Happybot',
+      link: 'happybot',
     },
     {
-      name: 'Neso',
-      link: '76561198193201687',
+      name: 'Betterate',
+      link: 'betterate',
     },
     {
-      name: 'loljuxd',
-      link: '76561198016198032',
+      name: 'Steam',
+      link: 'steam',
     },
     {
-      name: 'Lost',
-      link: '76561199079530557',
-    },
-    {
-      name: 'mannin',
-      link: '76561197975672336',
-    },
+      name: 'VRC',
+      link: 'vrc',
+    }
   ];
 
   for (let i in links) {
     let link = links[i];
 
-    $('#marquee').append(`<a href="https://steamcommunity.com/profiles/${link.link}" target="_BLANK">${link.name}</a>`);
+    $('#marquee').append(`<a href="/${link.link}" target="_BLANK">${link.name}</a>`);
 
     link = $('#marquee').children('a').last();
 
