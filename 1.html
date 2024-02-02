@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Timisuara</title>
+  <style>
+ body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <section id="1">
+    <h1>Rosenpark</h1>
+    <p>Dieser Park gilt als Wahrzeichen der Stadt und wurde 1891 angelegt und es gibt dort ebenfalls eine Rosenuhr </p>
+  </section>
+  <section id="2">
+    <h1>Kathedrale</h1>
+    <p>Diese Kathedrale ist eine orthodoxe Kriche, welche Denkmalgeschützt ist, 11 Türme hat und am befindet sich am "Piata Victoriei"</p>
+  </section>
+  <section id="3">
+    <h1>Opera Romana</h1>
+    <p> Die Oper wurde zwischen 1871 und 1875 von den Architekten "Hermann Helmer" und "Ferdinand Fellner" auf 1600 Eichenpfeilen errichtet</p>
+  </section>
+  <section id="4"> 
+    <h1>Pferdebahn</h1>
+    <p>Am 8. Juli 1869 fand die erste Fahrt der Pferdebahn in der Berga-Stadt sowie die erste sochen Nahverkehrmöglichkeiten auf dem Gebiet des heutigen Rumäniens statt. Temeswat war somit die dritte Stadt gobal die dies zuerst hatten.</p>
+  </section>
+  <section id="5">
+    <h1>Botanikpark</h1>
+    <p>Der botanische Park von Timisoara wurde im Zeitraum von 1986 bis 1990 von der Architekten "Silvia Grumeza" errichtet</p>
+  </section>
+  <section id="6">
+    <h1>Universität West</h1>
+    <p>Die West-Universität Timisoara ist eine staatliche Universität im westen Rumäniens. Die Unterversität wurde 1962 gegründet und wurde bist heut in 11 Fakultäten gegliedert</p>
+  </section>
+  <section id="7"> 
+    <h1>Einkaufszentrum Julius Mall</h1>
+    <p>Dieses Einkaufzentrum ist riesig und hat eine bunte Mischung aus Geschäften, Restaurants und großen Loungebereichen</p>
+  </section>
+    <section id="8"> 
+    <h1>Piata Unirii</h1>
+    <p>Dies ider der älterste Platz der Stadt Timisoara in Rumänien. Sie liegt im alten Festungskern Cetate und ist von Barocken, meißt pastellfarbene Kirchen und Palais gesäumt, die zumeist im 18. und 19. Jahrhundert errichtet worden waren.</p>
+  </section>
+  <section id="9">
+    <h1>Nat ional Museum of Banat</h1>
+    <p>Dies ist ein Mehrsparenmuseum, welches 1872 von der Banater Gesellschaft für Geschichte und Archäologie gegründet wurde. Heute ist es der Besitz der rumänischen Akademie und seit 1948 hat das Banate Museum seinen Sitz um Schloss Hunyadi</p>
+  </section>
+  <section id="10">
+    <h1>Banater Dorfmuseum</h1>
+    <p>Dies ist ein ethnograpisches Freilichtmuseum, welches im esten Rumäniens liegt. Es wurde im Jahr 1967 gegründet und am 10. august 1971 in der Lietung von Claudia Ilias eröffnet.</p>
+    </section>
+    <section id="11">
+        <h1>Barockpalast</h1>
+        <p>Dies ist ein denkmalgeschützter Palast, der vor kurzem Grundsaniert wurde, und ebenfalls Kunstmuseum genannt wird. Der Palast wurde zwischen 1752 und 1754 als Reguierungsgebäude erbaut, er wurde auch schon von den berümten Personen bezogen und für verschiedenste Zwecke genutzt.</p>
+    </section>
+  <script>
+        const sectionId = window.location.search.replace('?section=', '');
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });  </script>
+</body>
+</html>
